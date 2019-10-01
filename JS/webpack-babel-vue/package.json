@@ -1,0 +1,22 @@
+{
+  "name": "babel-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@vue/cli": "^3.11.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-es2015": "^6.24.1",
+    "vue": "^2.6.10",
+    "webpack-dev-server": "^3.8.1"
+  }
+}
