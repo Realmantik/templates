@@ -1,6 +1,6 @@
 # VS 2019 WebApi Empty template
 
-Empty VS template for fast sterting devs WebApi REST. .
+Empty VS template for fast starting devs WebApi REST.
 
   - No static
   - No MVC
