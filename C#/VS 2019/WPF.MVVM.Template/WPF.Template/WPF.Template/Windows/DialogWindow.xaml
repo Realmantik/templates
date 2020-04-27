@@ -7,12 +7,17 @@
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:behaviors="clr-namespace:WPF.Template.Behaviors"
         mc:Ignorable="d"
-        Title="DialogWindow" Height="250" Width="400">
+        Title="DialogWindow" Height="317.174" Width="424.238">
     <i:Interaction.Behaviors>
         <behaviors:CloseWindowBehavior CloseTrigger="{Binding CloseTrigger}" />
     </i:Interaction.Behaviors>
     <Grid>
-        <TextBlock Height="50" Width="300" Margin="0,150,0,0" TextAlignment="Center" Text="{Binding CurrentData}"></TextBlock>
-        <Button Height="50" Width="300" Content="Close Me" Command="{Binding CloseCommand}"></Button>
+        <StackPanel Margin="57,48,70,29">
+            <TextBlock FontSize="16" Text="{Binding CurrentData.Name}" HorizontalAlignment="Center" Height="40" Width ="269" Margin="10,0" TextAlignment="Center"/>
+            <TextBlock FontSize="14" Text="{Binding CurrentData.Model}" HorizontalAlignment="Center" Height="40" Width ="269" Margin="10,0" TextAlignment="Center"/>
+            <Image Height="111" Source="{Binding CurrentData.ImagePath}" Margin="10,10,10,10" />
+        </StackPanel>
+        <TextBlock Width="300" Margin="58,257,58,9" TextAlignment="Center" Text="{Binding CurrentData.Model}"/>
+        <Button Content="Close Me" Command="{Binding CloseCommand}" Margin="114,10,114,243"/>
     </Grid>
 </Window>

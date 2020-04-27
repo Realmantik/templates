@@ -61,6 +61,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\Car.cs" />
     <Compile Include="RelayCommand.cs" />
     <Compile Include="ViewModels\DialogWindowBaseViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
@@ -115,8 +116,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ferrari-laferrari_cr.jpg" />
+    <Resource Include="Images\ferrari_360_gtc_cr.jpg" />
+    <Resource Include="Images\porsche-718-Cayman_cr.jpg" />
+    <Resource Include="Images\porsche-911-turbo-s_cr.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

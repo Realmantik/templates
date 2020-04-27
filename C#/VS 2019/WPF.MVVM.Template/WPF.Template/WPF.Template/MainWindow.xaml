@@ -9,13 +9,17 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="410"></ColumnDefinition>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListBox Grid.Column="0"  VerticalAlignment="Stretch" SelectedItem="{Binding CurrentData}" ItemsSource="{Binding Data}">
+        <ListBox Grid.Column="0"  VerticalAlignment="Stretch" SelectedItem="{Binding CurrentCarData}" ItemsSource="{Binding CarData}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding}" />
+                    <StackPanel>
+                        <Image Width="100" Height="75" Source="{Binding Path=ImagePath}" />
+                        <TextBlock FontSize="16" Text="{Binding Path=Name}" HorizontalAlignment="Center" />
+                        <TextBlock FontSize="16" Text="{Binding Path=Model}" HorizontalAlignment="Center" />
+                    </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
             <i:Interaction.Triggers>

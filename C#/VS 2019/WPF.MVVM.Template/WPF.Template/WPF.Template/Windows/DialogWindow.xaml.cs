@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using WPF.Template.Models;
 using WPF.Template.ViewModels;
 
 namespace WPF.Template.Windows
@@ -8,10 +9,11 @@ namespace WPF.Template.Windows
     /// </summary>
     public partial class DialogWindow : Window
     {
-        public DialogWindow(string data)
+        public DialogWindow(Car data)
         {
             InitializeComponent();
             this.DataContext = new DialogWindowViewModel(data);
+
         }
     }
 }
